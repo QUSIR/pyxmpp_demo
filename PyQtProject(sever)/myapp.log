@@ -1,0 +1,220 @@
+Fri, 26 Jun 2015 10:51:09 hgkj_remote_tool.py[line:142] DEBUG start xmppp 1
+Fri, 26 Jun 2015 10:51:09 hgkj_remote_tool.py[line:144] DEBUG start xmppp 2
+Fri, 26 Jun 2015 10:51:09 hgkj_remote_tool.py[line:146] DEBUG start xmppp 3
+Fri, 26 Jun 2015 10:51:09 hgkj_remote_tool.py[line:152] DEBUG start xmppp 4
+Fri, 26 Jun 2015 10:51:09 hgkj_remote_tool.py[line:158] DEBUG start xmppp 6
+Fri, 26 Jun 2015 10:51:09 hgkj_remote_tool.py[line:160] DEBUG start xmppp 7
+Fri, 26 Jun 2015 10:51:09 hgkj_remote_tool.py[line:162] DEBUG start xmppp 8
+Fri, 26 Jun 2015 10:51:09 hgkj_remote_tool.py[line:164] DEBUG start xmppp 9
+Fri, 26 Jun 2015 10:51:09 hgkj_remote_tool.py[line:167] DEBUG start xmppp 10
+Fri, 26 Jun 2015 10:51:09 hgkj_remote_tool.py[line:170] DEBUG start xmppp 11
+Fri, 26 Jun 2015 10:51:09 hgkj_remote_tool.py[line:172] DEBUG start xmppp 12
+Fri, 26 Jun 2015 10:51:09 hgkj_remote_tool.py[line:231] DEBUG start xmppp 13
+Fri, 26 Jun 2015 10:51:09 hgkj_remote_tool.py[line:233] DEBUG start xmppp 14
+Fri, 26 Jun 2015 10:51:09 hgkj_remote_tool.py[line:235] DEBUG start xmppp 15
+Fri, 26 Jun 2015 10:51:09 hgkj_remote_tool.py[line:238] DEBUG start xmppp 16
+Fri, 26 Jun 2015 10:51:09 hgkj_remote_tool.py[line:240] DEBUG start xmppp 17
+Fri, 26 Jun 2015 10:51:09 hgkj_remote_tool.py[line:242] DEBUG start xmppp 18
+Fri, 26 Jun 2015 10:51:09 hgkj_remote_tool.py[line:244] DEBUG start xmppp 19
+Fri, 26 Jun 2015 10:51:09 hgkj_remote_tool.py[line:246] DEBUG start xmppp 20
+Fri, 26 Jun 2015 10:51:09 hgkj_remote_tool.py[line:249] DEBUG creating client...
+Fri, 26 Jun 2015 10:51:09 client.py[line:129] DEBUG link xmpp 22
+Fri, 26 Jun 2015 10:51:09 client.py[line:140] DEBUG link xmpp 21
+Fri, 26 Jun 2015 10:51:09 client.py[line:152] DEBUG Creating client stream: <class pyxmpp.jabber.clientstream.LegacyClientStream at 0x01BEB5E0>, auth_methods=['sasl:DIGEST-MD5', 'digest']
+Fri, 26 Jun 2015 10:51:09 client.py[line:161] DEBUG link xmpp 23
+Fri, 26 Jun 2015 10:51:09 client.py[line:164] DEBUG link xmpp 24
+Fri, 26 Jun 2015 10:51:09 hgkj_remote_tool.py[line:395] DEBUG *** State changed: resolving srv (u'192.168.123.122', 'xmpp-client') ***
+Fri, 26 Jun 2015 10:51:09 resolver.py[line:144] WARNING Could not resolve '_xmpp-client._tcp.192.168.123.122': NXDOMAIN
+Fri, 26 Jun 2015 10:51:09 hgkj_remote_tool.py[line:395] DEBUG *** State changed: resolving u'192.168.123.122' ***
+Fri, 26 Jun 2015 10:51:09 hgkj_remote_tool.py[line:395] DEBUG *** State changed: connecting (u'192.168.123.122', 5222) ***
+Fri, 26 Jun 2015 10:51:09 hgkj_remote_tool.py[line:395] DEBUG *** State changed: connected (u'192.168.123.122', 5222) ***
+Fri, 26 Jun 2015 10:51:09 streamtls.py[line:147] DEBUG OUT: '<?xml version="1.0" encoding="UTF-8"?>\n<stream:stream xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client" to="192.168.123.122" version="1.0">'
+Fri, 26 Jun 2015 10:51:09 client.py[line:167] DEBUG link xmpp 25
+Fri, 26 Jun 2015 10:51:09 hgkj_remote_tool.py[line:261] DEBUG link xmpp
+Fri, 26 Jun 2015 10:51:09 hgkj_remote_tool.py[line:271] DEBUG looping...
+Fri, 26 Jun 2015 10:51:09 streamtls.py[line:185] DEBUG StreamTLSMixIn._read(), socket: <socket._socketobject object at 0x01F37DF8>
+Fri, 26 Jun 2015 10:51:09 streambase.py[line:692] DEBUG StreamBase._read(), socket: <socket._socketobject object at 0x01F37DF8>
+Fri, 26 Jun 2015 10:51:09 streambase.py[line:714] DEBUG IN: '<?xml version=\'1.0\' encoding=\'UTF-8\'?><stream:stream xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client" from="192.168.123.122" id="35aaad8e" xml:lang="en" version="1.0"><stream:features><starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls"></starttls><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>DIGEST-MD5</mechanism><mechanism>PLAIN</mechanism><mechanism>ANONYMOUS</mechanism><mechanism>CRAM-MD5</mechanism></mechanisms><compression xmlns="http://jabber.org/features/compress"><method>zlib</method></compression><auth xmlns="http://jabber.org/features/iq-auth"/><register xmlns="http://jabber.org/features/iq-register"/></stream:features>'
+Fri, 26 Jun 2015 10:51:09 streambase.py[line:353] DEBUG input document: '<?xml version="1.0"?>\n<stream:stream xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" from="192.168.123.122" xml:lang="en" version="1.0" id="35aaad8e"/>\n'
+Fri, 26 Jun 2015 10:51:09 streambase.py[line:775] DEBUG Got stream features
+Fri, 26 Jun 2015 10:51:09 streambase.py[line:776] DEBUG Node: <xmlNode (features) object at 0x1f8beb8>
+Fri, 26 Jun 2015 10:51:09 streamtls.py[line:244] DEBUG StartTLS not negotiated
+Fri, 26 Jun 2015 10:51:09 streamsasl.py[line:88] DEBUG SASL support found
+Fri, 26 Jun 2015 10:51:09 hgkj_remote_tool.py[line:395] DEBUG *** State changed: fully connected <JID: u'192.168.123.122'> ***
+Fri, 26 Jun 2015 10:51:09 clientstream.py[line:114] DEBUG trying auth: ['sasl:DIGEST-MD5', 'digest']
+Fri, 26 Jun 2015 10:51:09 clientstream.py[line:184] DEBUG trying auth: (['sasl:DIGEST-MD5', 'digest'],)
+Fri, 26 Jun 2015 10:51:09 streamtls.py[line:147] DEBUG OUT: '<auth xmlns="urn:ietf:params:xml:ns:xmpp-sasl" mechanism="DIGEST-MD5"/>'
+Fri, 26 Jun 2015 10:51:09 streamtls.py[line:185] DEBUG StreamTLSMixIn._read(), socket: <socket._socketobject object at 0x01F37DF8>
+Fri, 26 Jun 2015 10:51:09 streambase.py[line:692] DEBUG StreamBase._read(), socket: <socket._socketobject object at 0x01F37DF8>
+Fri, 26 Jun 2015 10:51:09 streambase.py[line:714] DEBUG IN: '<challenge xmlns="urn:ietf:params:xml:ns:xmpp-sasl">cmVhbG09IjE5Mi4xNjguMTIzLjEyMiIsbm9uY2U9IjVSd3hjMUk4RHVjQjBBSVJ6WXlQb0JUSm1LakpNbGh5RnVldEJQY0siLHFvcD0iYXV0aCIsY2hhcnNldD11dGYtOCxhbGdvcml0aG09bWQ1LXNlc3M=</challenge>'
+Fri, 26 Jun 2015 10:51:09 digest_md5.py[line:256] DEBUG 'realm': '"192.168.123.122"'
+Fri, 26 Jun 2015 10:51:09 digest_md5.py[line:256] DEBUG 'nonce': '"5Rwxc1I8DucB0AIRzYyPoBTJmKjJMlhyFuetBPcK"'
+Fri, 26 Jun 2015 10:51:09 digest_md5.py[line:256] DEBUG 'qop': '"auth"'
+Fri, 26 Jun 2015 10:51:09 digest_md5.py[line:256] DEBUG 'charset': 'utf-8'
+Fri, 26 Jun 2015 10:51:09 digest_md5.py[line:256] DEBUG 'algorithm': 'md5-sess'
+Fri, 26 Jun 2015 10:51:09 streamtls.py[line:147] DEBUG OUT: '<response xmlns="urn:ietf:params:xml:ns:xmpp-sasl">cmVhbG09IjE5Mi4xNjguMTIzLjEyMiIsdXNlcm5hbWU9ImUiLGNub25jZT0iODI2NDExNzM5NTk3MTE2NTU2Mjg4MjU0Iixub25jZT0iNVJ3eGMxSThEdWNCMEFJUnpZeVBvQlRKbUtqSk1saHlGdWV0QlBjSyIsbmM9MDAwMDAwMDEscW9wPWF1dGgsZGlnZXN0LXVyaT0ieG1wcC8xOTIuMTY4LjEyMy4xMjIiLHJlc3BvbnNlPWQ5MjM4M2M3ZGNhNGNlMmZhYzdlMTQwMGU0OTBjOGFi</response>'
+Fri, 26 Jun 2015 10:51:09 streamtls.py[line:185] DEBUG StreamTLSMixIn._read(), socket: <socket._socketobject object at 0x01F37DF8>
+Fri, 26 Jun 2015 10:51:09 streambase.py[line:692] DEBUG StreamBase._read(), socket: <socket._socketobject object at 0x01F37DF8>
+Fri, 26 Jun 2015 10:51:09 streambase.py[line:714] DEBUG IN: '<success xmlns="urn:ietf:params:xml:ns:xmpp-sasl">cnNwYXV0aD0wYmFkZTc5NDgzNDdiZWM5YjBiYzg3Y2U3ZDYxZjdiMg==</success>'
+Fri, 26 Jun 2015 10:51:09 digest_md5.py[line:432] DEBUG 'rspauth': '0bade7948347bec9b0bc87ce7d61f7b2'
+Fri, 26 Jun 2015 10:51:09 streamsasl.py[line:294] DEBUG SASL authentication succeeded
+Fri, 26 Jun 2015 10:51:09 streamtls.py[line:147] DEBUG OUT: '<?xml version="1.0" encoding="UTF-8"?>\n<stream:stream xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client" to="192.168.123.122" version="1.0" id="35aaad8e">'
+Fri, 26 Jun 2015 10:51:09 hgkj_remote_tool.py[line:395] DEBUG *** State changed: authenticated <JID: u'e@192.168.123.122/tunneler'> ***
+Fri, 26 Jun 2015 10:51:09 streamtls.py[line:185] DEBUG StreamTLSMixIn._read(), socket: <socket._socketobject object at 0x01F37DF8>
+Fri, 26 Jun 2015 10:51:09 streambase.py[line:692] DEBUG StreamBase._read(), socket: <socket._socketobject object at 0x01F37DF8>
+Fri, 26 Jun 2015 10:51:09 streambase.py[line:714] DEBUG IN: '<?xml version=\'1.0\' encoding=\'UTF-8\'?><stream:stream xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client" from="192.168.123.122" id="35aaad8e" xml:lang="en" version="1.0"><stream:features><compression xmlns="http://jabber.org/features/compress"><method>zlib</method></compression><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"/><session xmlns="urn:ietf:params:xml:ns:xmpp-session"><optional/></session></stream:features>'
+Fri, 26 Jun 2015 10:51:09 streambase.py[line:353] DEBUG input document: '<?xml version="1.0"?>\n<stream:stream xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" from="192.168.123.122" xml:lang="en" version="1.0" id="35aaad8e"/>\n'
+Fri, 26 Jun 2015 10:51:09 streambase.py[line:775] DEBUG Got stream features
+Fri, 26 Jun 2015 10:51:09 streambase.py[line:776] DEBUG Node: <xmlNode (features) object at 0x1f8beb8>
+Fri, 26 Jun 2015 10:51:09 streamtls.py[line:244] DEBUG StartTLS not negotiated
+Fri, 26 Jun 2015 10:51:09 hgkj_remote_tool.py[line:395] DEBUG *** State changed: binding u'tunneler' ***
+Fri, 26 Jun 2015 10:51:09 streamtls.py[line:147] DEBUG OUT: '<iq xmlns:default="http://pyxmpp.jajcus.net/xmlns/common" type="set" id="290613"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><resource>tunneler</resource></bind></iq>'
+Fri, 26 Jun 2015 10:51:09 streamtls.py[line:185] DEBUG StreamTLSMixIn._read(), socket: <socket._socketobject object at 0x01F37DF8>
+Fri, 26 Jun 2015 10:51:09 streambase.py[line:692] DEBUG StreamBase._read(), socket: <socket._socketobject object at 0x01F37DF8>
+Fri, 26 Jun 2015 10:51:09 streambase.py[line:714] DEBUG IN: '<iq type="result" id="290613" to="192.168.123.122/35aaad8e"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><jid>e@192.168.123.122/tunneler</jid></bind></iq>'
+Fri, 26 Jun 2015 10:51:09 hgkj_remote_tool.py[line:395] DEBUG *** State changed: authorized <JID: u'e@192.168.123.122/tunneler'> ***
+Fri, 26 Jun 2015 10:51:09 streamtls.py[line:147] DEBUG OUT: '<iq xmlns:default="http://pyxmpp.jajcus.net/xmlns/common" type="set" id="290614"><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></iq>'
+Fri, 26 Jun 2015 10:51:09 streamtls.py[line:185] DEBUG StreamTLSMixIn._read(), socket: <socket._socketobject object at 0x01F37DF8>
+Fri, 26 Jun 2015 10:51:09 streambase.py[line:692] DEBUG StreamBase._read(), socket: <socket._socketobject object at 0x01F37DF8>
+Fri, 26 Jun 2015 10:51:09 streambase.py[line:714] DEBUG IN: '<iq type="result" id="290614" to="e@192.168.123.122/tunneler"/>'
+Fri, 26 Jun 2015 10:51:09 streamtls.py[line:147] DEBUG OUT: '<iq xmlns:default="http://pyxmpp.jajcus.net/xmlns/common" type="get" id="290615"><query xmlns="jabber:iq:roster"/></iq>'
+Fri, 26 Jun 2015 10:51:09 streamtls.py[line:147] DEBUG OUT: '<presence xmlns:default="http://pyxmpp.jajcus.net/xmlns/common"/>'
+Fri, 26 Jun 2015 10:51:09 streamtls.py[line:185] DEBUG StreamTLSMixIn._read(), socket: <socket._socketobject object at 0x01F37DF8>
+Fri, 26 Jun 2015 10:51:09 streambase.py[line:692] DEBUG StreamBase._read(), socket: <socket._socketobject object at 0x01F37DF8>
+Fri, 26 Jun 2015 10:51:09 streambase.py[line:714] DEBUG IN: '<iq type="result" id="290615" to="e@192.168.123.122/tunneler"><query xmlns="jabber:iq:roster"><item jid="f@192.168.123.122" name="f" subscription="both"><group>Friends</group></item></query></iq>'
+Fri, 26 Jun 2015 10:51:09 hgkj_remote_tool.py[line:412] DEBUG My roster:
+Fri, 26 Jun 2015 10:51:09 hgkj_remote_tool.py[line:407] DEBUG f@192.168.123.122 "f" subscription=both groups=Friends
+Fri, 26 Jun 2015 10:51:09 streamtls.py[line:185] DEBUG StreamTLSMixIn._read(), socket: <socket._socketobject object at 0x01F37DF8>
+Fri, 26 Jun 2015 10:51:09 streambase.py[line:692] DEBUG StreamBase._read(), socket: <socket._socketobject object at 0x01F37DF8>
+Fri, 26 Jun 2015 10:51:10 streambase.py[line:714] DEBUG IN: '<presence xmlns:default="http://pyxmpp.jajcus.net/xmlns/common" from="e@192.168.123.122/tunneler" to="e@192.168.123.122/tunneler"></presence>'
+Fri, 26 Jun 2015 10:51:10 hgkj_remote_tool.py[line:330] DEBUG e@192.168.123.122/tunneler has become available
+Fri, 26 Jun 2015 10:51:10 stanzaprocessor.py[line:291] DEBUG Unhandled 'presence' stanza: '<default:presence xmlns:default="http://pyxmpp.jajcus.net/xmlns/common" xmlns="jabber:client" to="e@192.168.123.122/tunneler" from="e@192.168.123.122/tunneler"/>'
+Fri, 26 Jun 2015 10:51:10 streamtls.py[line:185] DEBUG StreamTLSMixIn._read(), socket: <socket._socketobject object at 0x01F37DF8>
+Fri, 26 Jun 2015 10:51:10 streambase.py[line:692] DEBUG StreamBase._read(), socket: <socket._socketobject object at 0x01F37DF8>
+Fri, 26 Jun 2015 10:51:10 streambase.py[line:714] DEBUG IN: '<presence xmlns:default="http://pyxmpp.jajcus.net/xmlns/common" from="f@192.168.123.122/tunneler" to="e@192.168.123.122/tunneler"></presence>'
+Fri, 26 Jun 2015 10:51:10 hgkj_remote_tool.py[line:330] DEBUG f@192.168.123.122/tunneler has become available
+Fri, 26 Jun 2015 10:51:10 stanzaprocessor.py[line:291] DEBUG Unhandled 'presence' stanza: '<default:presence xmlns:default="http://pyxmpp.jajcus.net/xmlns/common" xmlns="jabber:client" to="e@192.168.123.122/tunneler" from="f@192.168.123.122/tunneler"/>'
+Fri, 26 Jun 2015 10:51:15 streamtls.py[line:147] DEBUG OUT: '<message xmlns:default="http://pyxmpp.jajcus.net/xmlns/common"  to="f@192.168.123.122" type="chat"><body>ALLDELETE</body></message>'
+Fri, 26 Jun 2015 10:51:15 streamtls.py[line:147] DEBUG OUT: '</stream:stream>'
+Fri, 26 Jun 2015 10:51:15 streamtls.py[line:185] DEBUG StreamTLSMixIn._read(), socket: <socket._socketobject object at 0x01F37DF8>
+Fri, 26 Jun 2015 10:51:15 streambase.py[line:692] DEBUG StreamBase._read(), socket: <socket._socketobject object at 0x01F37DF8>
+Fri, 26 Jun 2015 10:51:15 streambase.py[line:714] DEBUG IN: '</stream:stream>'
+Fri, 26 Jun 2015 10:51:15 streambase.py[line:408] DEBUG Stream ended
+Fri, 26 Jun 2015 10:51:15 hgkj_remote_tool.py[line:395] DEBUG *** State changed: disconnected <JID: u'192.168.123.122'> ***
+Fri, 26 Jun 2015 10:51:15 hgkj_remote_tool.py[line:286] DEBUG exiting...
+Fri, 26 Jun 2015 10:51:25 hgkj_remote_tool.py[line:142] DEBUG start xmppp 1
+Fri, 26 Jun 2015 10:51:25 hgkj_remote_tool.py[line:144] DEBUG start xmppp 2
+Fri, 26 Jun 2015 10:51:25 hgkj_remote_tool.py[line:146] DEBUG start xmppp 3
+Fri, 26 Jun 2015 10:51:25 hgkj_remote_tool.py[line:152] DEBUG start xmppp 4
+Fri, 26 Jun 2015 10:51:25 hgkj_remote_tool.py[line:158] DEBUG start xmppp 6
+Fri, 26 Jun 2015 10:51:25 hgkj_remote_tool.py[line:160] DEBUG start xmppp 7
+Fri, 26 Jun 2015 10:51:25 hgkj_remote_tool.py[line:162] DEBUG start xmppp 8
+Fri, 26 Jun 2015 10:51:25 hgkj_remote_tool.py[line:164] DEBUG start xmppp 9
+Fri, 26 Jun 2015 10:51:25 hgkj_remote_tool.py[line:167] DEBUG start xmppp 10
+Fri, 26 Jun 2015 10:51:25 hgkj_remote_tool.py[line:170] DEBUG start xmppp 11
+Fri, 26 Jun 2015 10:51:25 hgkj_remote_tool.py[line:172] DEBUG start xmppp 12
+Fri, 26 Jun 2015 10:51:25 hgkj_remote_tool.py[line:231] DEBUG start xmppp 13
+Fri, 26 Jun 2015 10:51:25 hgkj_remote_tool.py[line:233] DEBUG start xmppp 14
+Fri, 26 Jun 2015 10:51:25 hgkj_remote_tool.py[line:235] DEBUG start xmppp 15
+Fri, 26 Jun 2015 10:51:25 hgkj_remote_tool.py[line:238] DEBUG start xmppp 16
+Fri, 26 Jun 2015 10:51:25 hgkj_remote_tool.py[line:240] DEBUG start xmppp 17
+Fri, 26 Jun 2015 10:51:25 hgkj_remote_tool.py[line:242] DEBUG start xmppp 18
+Fri, 26 Jun 2015 10:51:25 hgkj_remote_tool.py[line:244] DEBUG start xmppp 19
+Fri, 26 Jun 2015 10:51:25 hgkj_remote_tool.py[line:246] DEBUG start xmppp 20
+Fri, 26 Jun 2015 10:51:25 hgkj_remote_tool.py[line:249] DEBUG creating client...
+Fri, 26 Jun 2015 10:51:25 client.py[line:129] DEBUG link xmpp 22
+Fri, 26 Jun 2015 10:51:25 client.py[line:140] DEBUG link xmpp 21
+Fri, 26 Jun 2015 10:51:25 client.py[line:152] DEBUG Creating client stream: <class pyxmpp.jabber.clientstream.LegacyClientStream at 0x01BEB5E0>, auth_methods=['sasl:DIGEST-MD5', 'digest']
+Fri, 26 Jun 2015 10:51:25 client.py[line:161] DEBUG link xmpp 23
+Fri, 26 Jun 2015 10:51:25 client.py[line:164] DEBUG link xmpp 24
+Fri, 26 Jun 2015 10:51:25 hgkj_remote_tool.py[line:395] DEBUG *** State changed: resolving srv (u'192.168.123.122', 'xmpp-client') ***
+Fri, 26 Jun 2015 10:51:25 resolver.py[line:144] WARNING Could not resolve '_xmpp-client._tcp.192.168.123.122': NXDOMAIN
+Fri, 26 Jun 2015 10:51:25 hgkj_remote_tool.py[line:395] DEBUG *** State changed: resolving u'192.168.123.122' ***
+Fri, 26 Jun 2015 10:51:25 hgkj_remote_tool.py[line:395] DEBUG *** State changed: connecting (u'192.168.123.122', 5222) ***
+Fri, 26 Jun 2015 10:51:25 hgkj_remote_tool.py[line:395] DEBUG *** State changed: connected (u'192.168.123.122', 5222) ***
+Fri, 26 Jun 2015 10:51:25 streamtls.py[line:147] DEBUG OUT: '<?xml version="1.0" encoding="UTF-8"?>\n<stream:stream xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client" to="192.168.123.122" version="1.0">'
+Fri, 26 Jun 2015 10:51:25 client.py[line:167] DEBUG link xmpp 25
+Fri, 26 Jun 2015 10:51:25 hgkj_remote_tool.py[line:261] DEBUG link xmpp
+Fri, 26 Jun 2015 10:51:25 hgkj_remote_tool.py[line:271] DEBUG looping...
+Fri, 26 Jun 2015 10:51:25 streamtls.py[line:185] DEBUG StreamTLSMixIn._read(), socket: <socket._socketobject object at 0x00FE7E68>
+Fri, 26 Jun 2015 10:51:25 streambase.py[line:692] DEBUG StreamBase._read(), socket: <socket._socketobject object at 0x00FE7E68>
+Fri, 26 Jun 2015 10:51:25 streambase.py[line:714] DEBUG IN: '<?xml version=\'1.0\' encoding=\'UTF-8\'?><stream:stream xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client" from="192.168.123.122" id="4c8bb7fd" xml:lang="en" version="1.0"><stream:features><starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls"></starttls><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>DIGEST-MD5</mechanism><mechanism>PLAIN</mechanism><mechanism>ANONYMOUS</mechanism><mechanism>CRAM-MD5</mechanism></mechanisms><compression xmlns="http://jabber.org/features/compress"><method>zlib</method></compression><auth xmlns="http://jabber.org/features/iq-auth"/><register xmlns="http://jabber.org/features/iq-register"/></stream:features>'
+Fri, 26 Jun 2015 10:51:25 streambase.py[line:353] DEBUG input document: '<?xml version="1.0"?>\n<stream:stream xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" from="192.168.123.122" xml:lang="en" version="1.0" id="4c8bb7fd"/>\n'
+Fri, 26 Jun 2015 10:51:25 streambase.py[line:775] DEBUG Got stream features
+Fri, 26 Jun 2015 10:51:25 streambase.py[line:776] DEBUG Node: <xmlNode (features) object at 0x20008a0>
+Fri, 26 Jun 2015 10:51:25 streamtls.py[line:244] DEBUG StartTLS not negotiated
+Fri, 26 Jun 2015 10:51:25 streamsasl.py[line:88] DEBUG SASL support found
+Fri, 26 Jun 2015 10:51:25 hgkj_remote_tool.py[line:395] DEBUG *** State changed: fully connected <JID: u'192.168.123.122'> ***
+Fri, 26 Jun 2015 10:51:25 clientstream.py[line:114] DEBUG trying auth: ['sasl:DIGEST-MD5', 'digest']
+Fri, 26 Jun 2015 10:51:25 clientstream.py[line:184] DEBUG trying auth: (['sasl:DIGEST-MD5', 'digest'],)
+Fri, 26 Jun 2015 10:51:25 streamtls.py[line:147] DEBUG OUT: '<auth xmlns="urn:ietf:params:xml:ns:xmpp-sasl" mechanism="DIGEST-MD5"/>'
+Fri, 26 Jun 2015 10:51:25 streamtls.py[line:185] DEBUG StreamTLSMixIn._read(), socket: <socket._socketobject object at 0x00FE7E68>
+Fri, 26 Jun 2015 10:51:25 streambase.py[line:692] DEBUG StreamBase._read(), socket: <socket._socketobject object at 0x00FE7E68>
+Fri, 26 Jun 2015 10:51:25 streambase.py[line:714] DEBUG IN: '<challenge xmlns="urn:ietf:params:xml:ns:xmpp-sasl">cmVhbG09IjE5Mi4xNjguMTIzLjEyMiIsbm9uY2U9InNIeFZETURpTG1VQWsvNWN3RDQ3a29TenFNUHlLcFRXM3dHQWFTLzEiLHFvcD0iYXV0aCIsY2hhcnNldD11dGYtOCxhbGdvcml0aG09bWQ1LXNlc3M=</challenge>'
+Fri, 26 Jun 2015 10:51:25 digest_md5.py[line:256] DEBUG 'realm': '"192.168.123.122"'
+Fri, 26 Jun 2015 10:51:25 digest_md5.py[line:256] DEBUG 'nonce': '"sHxVDMDiLmUAk/5cwD47koSzqMPyKpTW3wGAaS/1"'
+Fri, 26 Jun 2015 10:51:25 digest_md5.py[line:256] DEBUG 'qop': '"auth"'
+Fri, 26 Jun 2015 10:51:25 digest_md5.py[line:256] DEBUG 'charset': 'utf-8'
+Fri, 26 Jun 2015 10:51:25 digest_md5.py[line:256] DEBUG 'algorithm': 'md5-sess'
+Fri, 26 Jun 2015 10:51:25 streamtls.py[line:147] DEBUG OUT: '<response xmlns="urn:ietf:params:xml:ns:xmpp-sasl">cmVhbG09IjE5Mi4xNjguMTIzLjEyMiIsdXNlcm5hbWU9ImUiLGNub25jZT0iMTk1MDU1NjM3MTkxODc2OTIyOTY5OTQiLG5vbmNlPSJzSHhWRE1EaUxtVUFrLzVjd0Q0N2tvU3pxTVB5S3BUVzN3R0FhUy8xIixuYz0wMDAwMDAwMSxxb3A9YXV0aCxkaWdlc3QtdXJpPSJ4bXBwLzE5Mi4xNjguMTIzLjEyMiIscmVzcG9uc2U9ZTIwNWEyZWQwNmUxNGY5Yjk5MGE3OTllYjAzNGZjMWQ=</response>'
+Fri, 26 Jun 2015 10:51:25 streamtls.py[line:185] DEBUG StreamTLSMixIn._read(), socket: <socket._socketobject object at 0x00FE7E68>
+Fri, 26 Jun 2015 10:51:25 streambase.py[line:692] DEBUG StreamBase._read(), socket: <socket._socketobject object at 0x00FE7E68>
+Fri, 26 Jun 2015 10:51:25 streambase.py[line:714] DEBUG IN: '<success xmlns="urn:ietf:params:xml:ns:xmpp-sasl">cnNwYXV0aD04OWM1NTJmZDM2MGU4ZWViMmJjNDI1NDUzZWEzMjc2MA==</success>'
+Fri, 26 Jun 2015 10:51:25 digest_md5.py[line:432] DEBUG 'rspauth': '89c552fd360e8eeb2bc425453ea32760'
+Fri, 26 Jun 2015 10:51:25 streamsasl.py[line:294] DEBUG SASL authentication succeeded
+Fri, 26 Jun 2015 10:51:25 streamtls.py[line:147] DEBUG OUT: '<?xml version="1.0" encoding="UTF-8"?>\n<stream:stream xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client" to="192.168.123.122" version="1.0" id="4c8bb7fd">'
+Fri, 26 Jun 2015 10:51:25 hgkj_remote_tool.py[line:395] DEBUG *** State changed: authenticated <JID: u'e@192.168.123.122/tunneler'> ***
+Fri, 26 Jun 2015 10:51:25 streamtls.py[line:185] DEBUG StreamTLSMixIn._read(), socket: <socket._socketobject object at 0x00FE7E68>
+Fri, 26 Jun 2015 10:51:25 streambase.py[line:692] DEBUG StreamBase._read(), socket: <socket._socketobject object at 0x00FE7E68>
+Fri, 26 Jun 2015 10:51:25 streambase.py[line:714] DEBUG IN: '<?xml version=\'1.0\' encoding=\'UTF-8\'?><stream:stream xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client" from="192.168.123.122" id="4c8bb7fd" xml:lang="en" version="1.0"><stream:features><compression xmlns="http://jabber.org/features/compress"><method>zlib</method></compression><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"/><session xmlns="urn:ietf:params:xml:ns:xmpp-session"><optional/></session></stream:features>'
+Fri, 26 Jun 2015 10:51:25 streambase.py[line:353] DEBUG input document: '<?xml version="1.0"?>\n<stream:stream xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" from="192.168.123.122" xml:lang="en" version="1.0" id="4c8bb7fd"/>\n'
+Fri, 26 Jun 2015 10:51:25 streambase.py[line:775] DEBUG Got stream features
+Fri, 26 Jun 2015 10:51:25 streambase.py[line:776] DEBUG Node: <xmlNode (features) object at 0x2000a30>
+Fri, 26 Jun 2015 10:51:25 streamtls.py[line:244] DEBUG StartTLS not negotiated
+Fri, 26 Jun 2015 10:51:25 hgkj_remote_tool.py[line:395] DEBUG *** State changed: binding u'tunneler' ***
+Fri, 26 Jun 2015 10:51:25 streamtls.py[line:147] DEBUG OUT: '<iq xmlns:default="http://pyxmpp.jajcus.net/xmlns/common" type="set" id="290616"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><resource>tunneler</resource></bind></iq>'
+Fri, 26 Jun 2015 10:51:25 streamtls.py[line:185] DEBUG StreamTLSMixIn._read(), socket: <socket._socketobject object at 0x00FE7E68>
+Fri, 26 Jun 2015 10:51:25 streambase.py[line:692] DEBUG StreamBase._read(), socket: <socket._socketobject object at 0x00FE7E68>
+Fri, 26 Jun 2015 10:51:25 streambase.py[line:714] DEBUG IN: '<iq type="result" id="290616" to="192.168.123.122/4c8bb7fd"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><jid>e@192.168.123.122/tunneler</jid></bind></iq>'
+Fri, 26 Jun 2015 10:51:25 hgkj_remote_tool.py[line:395] DEBUG *** State changed: authorized <JID: u'e@192.168.123.122/tunneler'> ***
+Fri, 26 Jun 2015 10:51:25 streamtls.py[line:147] DEBUG OUT: '<iq xmlns:default="http://pyxmpp.jajcus.net/xmlns/common" type="set" id="290617"><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></iq>'
+Fri, 26 Jun 2015 10:51:25 streamtls.py[line:185] DEBUG StreamTLSMixIn._read(), socket: <socket._socketobject object at 0x00FE7E68>
+Fri, 26 Jun 2015 10:51:25 streambase.py[line:692] DEBUG StreamBase._read(), socket: <socket._socketobject object at 0x00FE7E68>
+Fri, 26 Jun 2015 10:51:25 streambase.py[line:714] DEBUG IN: '<iq type="result" id="290617" to="e@192.168.123.122/tunneler"/>'
+Fri, 26 Jun 2015 10:51:25 streamtls.py[line:147] DEBUG OUT: '<iq xmlns:default="http://pyxmpp.jajcus.net/xmlns/common" type="get" id="290618"><query xmlns="jabber:iq:roster"/></iq>'
+Fri, 26 Jun 2015 10:51:25 streamtls.py[line:147] DEBUG OUT: '<presence xmlns:default="http://pyxmpp.jajcus.net/xmlns/common"/>'
+Fri, 26 Jun 2015 10:51:25 streamtls.py[line:185] DEBUG StreamTLSMixIn._read(), socket: <socket._socketobject object at 0x00FE7E68>
+Fri, 26 Jun 2015 10:51:25 streambase.py[line:692] DEBUG StreamBase._read(), socket: <socket._socketobject object at 0x00FE7E68>
+Fri, 26 Jun 2015 10:51:25 streambase.py[line:714] DEBUG IN: '<iq type="result" id="290618" to="e@192.168.123.122/tunneler"><query xmlns="jabber:iq:roster"><item jid="f@192.168.123.122" name="f" subscription="both"><group>Friends</group></item></query></iq>'
+Fri, 26 Jun 2015 10:51:25 hgkj_remote_tool.py[line:412] DEBUG My roster:
+Fri, 26 Jun 2015 10:51:25 hgkj_remote_tool.py[line:407] DEBUG f@192.168.123.122 "f" subscription=both groups=Friends
+Fri, 26 Jun 2015 10:51:25 streamtls.py[line:185] DEBUG StreamTLSMixIn._read(), socket: <socket._socketobject object at 0x00FE7E68>
+Fri, 26 Jun 2015 10:51:25 streambase.py[line:692] DEBUG StreamBase._read(), socket: <socket._socketobject object at 0x00FE7E68>
+Fri, 26 Jun 2015 10:51:26 streambase.py[line:714] DEBUG IN: '<presence xmlns:default="http://pyxmpp.jajcus.net/xmlns/common" from="e@192.168.123.122/tunneler" to="e@192.168.123.122/tunneler"></presence><presence xmlns:default="http://pyxmpp.jajcus.net/xmlns/common" from="f@192.168.123.122/tunneler" to="e@192.168.123.122/tunneler"></presence>'
+Fri, 26 Jun 2015 10:51:26 hgkj_remote_tool.py[line:330] DEBUG e@192.168.123.122/tunneler has become available
+Fri, 26 Jun 2015 10:51:26 stanzaprocessor.py[line:291] DEBUG Unhandled 'presence' stanza: '<default:presence xmlns:default="http://pyxmpp.jajcus.net/xmlns/common" xmlns="jabber:client" to="e@192.168.123.122/tunneler" from="e@192.168.123.122/tunneler"/>'
+Fri, 26 Jun 2015 10:51:26 hgkj_remote_tool.py[line:330] DEBUG f@192.168.123.122/tunneler has become available
+Fri, 26 Jun 2015 10:51:26 stanzaprocessor.py[line:291] DEBUG Unhandled 'presence' stanza: '<default:presence xmlns:default="http://pyxmpp.jajcus.net/xmlns/common" xmlns="jabber:client" to="e@192.168.123.122/tunneler" from="f@192.168.123.122/tunneler"/>'
+Fri, 26 Jun 2015 10:51:45 streamtls.py[line:185] DEBUG StreamTLSMixIn._read(), socket: <socket._socketobject object at 0x00FE7E68>
+Fri, 26 Jun 2015 10:51:45 streambase.py[line:692] DEBUG StreamBase._read(), socket: <socket._socketobject object at 0x00FE7E68>
+Fri, 26 Jun 2015 10:51:45 streambase.py[line:714] DEBUG IN: '<message xmlns:default="http://pyxmpp.jajcus.net/xmlns/common" to="e@192.168.123.122" type="chat" from="f@192.168.123.122/tunneler"><body>CMD OR CLOSE</body></message>'
+Fri, 26 Jun 2015 10:51:59 streamtls.py[line:185] DEBUG StreamTLSMixIn._read(), socket: <socket._socketobject object at 0x00FE7E68>
+Fri, 26 Jun 2015 10:51:59 streambase.py[line:692] DEBUG StreamBase._read(), socket: <socket._socketobject object at 0x00FE7E68>
+Fri, 26 Jun 2015 10:51:59 streambase.py[line:714] DEBUG IN: '<message xmlns:default="http://pyxmpp.jajcus.net/xmlns/common" to="e@192.168.123.122" type="chat" from="f@192.168.123.122/tunneler"><body>CMD OR CLOSE!0</body></message>'
+Fri, 26 Jun 2015 10:52:07 hgkj_remote_tool.py[line:449] DEBUG delete sever
+Fri, 26 Jun 2015 10:52:08 streamtls.py[line:185] DEBUG StreamTLSMixIn._read(), socket: <socket._socketobject object at 0x00FE7E68>
+Fri, 26 Jun 2015 10:52:08 streambase.py[line:692] DEBUG StreamBase._read(), socket: <socket._socketobject object at 0x00FE7E68>
+Fri, 26 Jun 2015 10:52:08 streambase.py[line:714] DEBUG IN: ' '
+Fri, 26 Jun 2015 10:52:28 streamtls.py[line:185] DEBUG StreamTLSMixIn._read(), socket: <socket._socketobject object at 0x00FE7E68>
+Fri, 26 Jun 2015 10:52:28 streambase.py[line:692] DEBUG StreamBase._read(), socket: <socket._socketobject object at 0x00FE7E68>
+Fri, 26 Jun 2015 10:52:28 streambase.py[line:714] DEBUG IN: '<message xmlns:default="http://pyxmpp.jajcus.net/xmlns/common" to="e@192.168.123.122" type="chat" from="f@192.168.123.122/tunneler"><body>CMD ADD !shgkj0000@192.168.123.122!shgkj0000!192.168.123.122!0 </body></message>'
+Fri, 26 Jun 2015 10:52:28 hgkj_remote_tool.py[line:495] DEBUG add sever
+Fri, 26 Jun 2015 10:52:28 resolver.py[line:144] WARNING Could not resolve '_xmpp-client._tcp.192.168.123.122': NXDOMAIN
+Fri, 26 Jun 2015 10:53:38 resolver.py[line:144] WARNING Could not resolve '_xmpp-client._tcp.192.168.123.122': NXDOMAIN
+Fri, 26 Jun 2015 10:55:15 resolver.py[line:144] WARNING Could not resolve '_xmpp-client._tcp.192.168.123.122': NXDOMAIN
+Fri, 26 Jun 2015 10:55:54 resolver.py[line:144] WARNING Could not resolve '_xmpp-client._tcp.192.168.123.122': NXDOMAIN
+Fri, 26 Jun 2015 10:55:55 resolver.py[line:144] WARNING Could not resolve '_xmpp-client._tcp.192.168.123.122': NXDOMAIN
+Fri, 26 Jun 2015 10:58:21 resolver.py[line:144] WARNING Could not resolve '_xmpp-client._tcp.192.168.123.122': NXDOMAIN
+Fri, 26 Jun 2015 11:05:53 resolver.py[line:144] WARNING Could not resolve '_xmpp-client._tcp.192.168.123.122': NXDOMAIN
+Fri, 26 Jun 2015 11:05:59 resolver.py[line:144] WARNING Could not resolve '_xmpp-client._tcp.192.168.123.122': NXDOMAIN
+Fri, 26 Jun 2015 11:06:03 resolver.py[line:144] WARNING Could not resolve '_xmpp-client._tcp.192.168.123.122': NXDOMAIN

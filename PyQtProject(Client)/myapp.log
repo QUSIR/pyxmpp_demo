@@ -1,0 +1,64 @@
+Fri, 26 Jun 2015 11:05:50 client.py[line:129] DEBUG link xmpp 22
+Fri, 26 Jun 2015 11:05:50 client.py[line:140] DEBUG link xmpp 21
+Fri, 26 Jun 2015 11:05:50 client.py[line:152] DEBUG Creating client stream: <class pyxmpp.jabber.clientstream.LegacyClientStream at 0x01B62768>, auth_methods=['sasl:DIGEST-MD5', 'digest']
+Fri, 26 Jun 2015 11:05:50 client.py[line:161] DEBUG link xmpp 23
+Fri, 26 Jun 2015 11:05:50 client.py[line:164] DEBUG link xmpp 24
+Fri, 26 Jun 2015 11:05:50 resolver.py[line:144] WARNING Could not resolve '_xmpp-client._tcp.192.168.123.122': NXDOMAIN
+Fri, 26 Jun 2015 11:05:50 streamtls.py[line:147] DEBUG OUT: '<?xml version="1.0" encoding="UTF-8"?>\n<stream:stream xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client" to="192.168.123.122" version="1.0">'
+Fri, 26 Jun 2015 11:05:50 client.py[line:167] DEBUG link xmpp 25
+Fri, 26 Jun 2015 11:05:51 streamtls.py[line:185] DEBUG StreamTLSMixIn._read(), socket: <socket._socketobject object at 0x01ED3260>
+Fri, 26 Jun 2015 11:05:51 streambase.py[line:692] DEBUG StreamBase._read(), socket: <socket._socketobject object at 0x01ED3260>
+Fri, 26 Jun 2015 11:05:51 streambase.py[line:714] DEBUG IN: '<?xml version=\'1.0\' encoding=\'UTF-8\'?><stream:stream xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client" from="192.168.123.122" id="296fc80f" xml:lang="en" version="1.0"><stream:features><starttls xmlns="urn:ietf:params:xml:ns:xmpp-tls"></starttls><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>DIGEST-MD5</mechanism><mechanism>PLAIN</mechanism><mechanism>ANONYMOUS</mechanism><mechanism>CRAM-MD5</mechanism></mechanisms><compression xmlns="http://jabber.org/features/compress"><method>zlib</method></compression><auth xmlns="http://jabber.org/features/iq-auth"/><register xmlns="http://jabber.org/features/iq-register"/></stream:features>'
+Fri, 26 Jun 2015 11:05:51 streambase.py[line:353] DEBUG input document: '<?xml version="1.0"?>\n<stream:stream xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" from="192.168.123.122" xml:lang="en" version="1.0" id="296fc80f"/>\n'
+Fri, 26 Jun 2015 11:05:51 streambase.py[line:775] DEBUG Got stream features
+Fri, 26 Jun 2015 11:05:51 streambase.py[line:776] DEBUG Node: <xmlNode (features) object at 0x1edb940>
+Fri, 26 Jun 2015 11:05:51 streamtls.py[line:244] DEBUG StartTLS not negotiated
+Fri, 26 Jun 2015 11:05:51 streamsasl.py[line:88] DEBUG SASL support found
+Fri, 26 Jun 2015 11:05:51 clientstream.py[line:114] DEBUG trying auth: ['sasl:DIGEST-MD5', 'digest']
+Fri, 26 Jun 2015 11:05:51 clientstream.py[line:184] DEBUG trying auth: (['sasl:DIGEST-MD5', 'digest'],)
+Fri, 26 Jun 2015 11:05:51 streamtls.py[line:147] DEBUG OUT: '<auth xmlns="urn:ietf:params:xml:ns:xmpp-sasl" mechanism="DIGEST-MD5"/>'
+Fri, 26 Jun 2015 11:05:51 streamtls.py[line:185] DEBUG StreamTLSMixIn._read(), socket: <socket._socketobject object at 0x01ED3260>
+Fri, 26 Jun 2015 11:05:51 streambase.py[line:692] DEBUG StreamBase._read(), socket: <socket._socketobject object at 0x01ED3260>
+Fri, 26 Jun 2015 11:05:51 streambase.py[line:714] DEBUG IN: '<challenge xmlns="urn:ietf:params:xml:ns:xmpp-sasl">cmVhbG09IjE5Mi4xNjguMTIzLjEyMiIsbm9uY2U9IkFhWTh3aWxLNEZEQjlJdzlHc1dLRm1KR1J6M0NvL0lwTEJhbWc0RnkiLHFvcD0iYXV0aCIsY2hhcnNldD11dGYtOCxhbGdvcml0aG09bWQ1LXNlc3M=</challenge>'
+Fri, 26 Jun 2015 11:05:51 digest_md5.py[line:256] DEBUG 'realm': '"192.168.123.122"'
+Fri, 26 Jun 2015 11:05:51 digest_md5.py[line:256] DEBUG 'nonce': '"AaY8wilK4FDB9Iw9GsWKFmJGRz3Co/IpLBamg4Fy"'
+Fri, 26 Jun 2015 11:05:51 digest_md5.py[line:256] DEBUG 'qop': '"auth"'
+Fri, 26 Jun 2015 11:05:51 digest_md5.py[line:256] DEBUG 'charset': 'utf-8'
+Fri, 26 Jun 2015 11:05:51 digest_md5.py[line:256] DEBUG 'algorithm': 'md5-sess'
+Fri, 26 Jun 2015 11:05:51 streamtls.py[line:147] DEBUG OUT: '<response xmlns="urn:ietf:params:xml:ns:xmpp-sasl">cmVhbG09IjE5Mi4xNjguMTIzLjEyMiIsdXNlcm5hbWU9ImYiLGNub25jZT0iMjgyMzQ0Nzk4OTU0MzE1MjEzOTI5MDM5Iixub25jZT0iQWFZOHdpbEs0RkRCOUl3OUdzV0tGbUpHUnozQ28vSXBMQmFtZzRGeSIsbmM9MDAwMDAwMDEscW9wPWF1dGgsZGlnZXN0LXVyaT0ieG1wcC8xOTIuMTY4LjEyMy4xMjIiLHJlc3BvbnNlPTM2NDhkYmYxMWUzYjcyMDE5YjNlMDQ3MjIyOWE3NDhh</response>'
+Fri, 26 Jun 2015 11:05:51 streamtls.py[line:185] DEBUG StreamTLSMixIn._read(), socket: <socket._socketobject object at 0x01ED3260>
+Fri, 26 Jun 2015 11:05:51 streambase.py[line:692] DEBUG StreamBase._read(), socket: <socket._socketobject object at 0x01ED3260>
+Fri, 26 Jun 2015 11:05:51 streambase.py[line:714] DEBUG IN: '<success xmlns="urn:ietf:params:xml:ns:xmpp-sasl">cnNwYXV0aD04NTFjOTQzZWFiMzVmMDJjMjI1MTFjNDFhMGU1OGU4MA==</success>'
+Fri, 26 Jun 2015 11:05:51 digest_md5.py[line:432] DEBUG 'rspauth': '851c943eab35f02c22511c41a0e58e80'
+Fri, 26 Jun 2015 11:05:51 streamsasl.py[line:294] DEBUG SASL authentication succeeded
+Fri, 26 Jun 2015 11:05:51 streamtls.py[line:147] DEBUG OUT: '<?xml version="1.0" encoding="UTF-8"?>\n<stream:stream xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client" to="192.168.123.122" version="1.0" id="296fc80f">'
+Fri, 26 Jun 2015 11:05:51 streamtls.py[line:185] DEBUG StreamTLSMixIn._read(), socket: <socket._socketobject object at 0x01ED3260>
+Fri, 26 Jun 2015 11:05:51 streambase.py[line:692] DEBUG StreamBase._read(), socket: <socket._socketobject object at 0x01ED3260>
+Fri, 26 Jun 2015 11:05:51 streambase.py[line:714] DEBUG IN: '<?xml version=\'1.0\' encoding=\'UTF-8\'?><stream:stream xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client" from="192.168.123.122" id="296fc80f" xml:lang="en" version="1.0"><stream:features><compression xmlns="http://jabber.org/features/compress"><method>zlib</method></compression><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"/><session xmlns="urn:ietf:params:xml:ns:xmpp-session"><optional/></session></stream:features>'
+Fri, 26 Jun 2015 11:05:51 streambase.py[line:353] DEBUG input document: '<?xml version="1.0"?>\n<stream:stream xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" from="192.168.123.122" xml:lang="en" version="1.0" id="296fc80f"/>\n'
+Fri, 26 Jun 2015 11:05:51 streambase.py[line:775] DEBUG Got stream features
+Fri, 26 Jun 2015 11:05:51 streambase.py[line:776] DEBUG Node: <xmlNode (features) object at 0x1edb940>
+Fri, 26 Jun 2015 11:05:51 streamtls.py[line:244] DEBUG StartTLS not negotiated
+Fri, 26 Jun 2015 11:05:51 streamtls.py[line:147] DEBUG OUT: '<iq xmlns:default="http://pyxmpp.jajcus.net/xmlns/common" type="set" id="634567"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><resource>tunneler</resource></bind></iq>'
+Fri, 26 Jun 2015 11:05:51 streamtls.py[line:185] DEBUG StreamTLSMixIn._read(), socket: <socket._socketobject object at 0x01ED3260>
+Fri, 26 Jun 2015 11:05:51 streambase.py[line:692] DEBUG StreamBase._read(), socket: <socket._socketobject object at 0x01ED3260>
+Fri, 26 Jun 2015 11:05:51 streambase.py[line:714] DEBUG IN: '<iq type="result" id="634567" to="192.168.123.122/296fc80f"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><jid>f@192.168.123.122/tunneler</jid></bind></iq>'
+Fri, 26 Jun 2015 11:05:51 streamtls.py[line:147] DEBUG OUT: '<iq xmlns:default="http://pyxmpp.jajcus.net/xmlns/common" type="set" id="634568"><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></iq>'
+Fri, 26 Jun 2015 11:05:51 streamtls.py[line:185] DEBUG StreamTLSMixIn._read(), socket: <socket._socketobject object at 0x01ED3260>
+Fri, 26 Jun 2015 11:05:51 streambase.py[line:692] DEBUG StreamBase._read(), socket: <socket._socketobject object at 0x01ED3260>
+Fri, 26 Jun 2015 11:05:51 streambase.py[line:714] DEBUG IN: '<iq type="result" id="634568" to="f@192.168.123.122/tunneler"/>'
+Fri, 26 Jun 2015 11:05:51 streamtls.py[line:147] DEBUG OUT: '<iq xmlns:default="http://pyxmpp.jajcus.net/xmlns/common" type="get" id="634569"><query xmlns="jabber:iq:roster"/></iq>'
+Fri, 26 Jun 2015 11:05:51 streamtls.py[line:147] DEBUG OUT: '<presence xmlns:default="http://pyxmpp.jajcus.net/xmlns/common"/>'
+Fri, 26 Jun 2015 11:05:51 streamtls.py[line:185] DEBUG StreamTLSMixIn._read(), socket: <socket._socketobject object at 0x01ED3260>
+Fri, 26 Jun 2015 11:05:51 streambase.py[line:692] DEBUG StreamBase._read(), socket: <socket._socketobject object at 0x01ED3260>
+Fri, 26 Jun 2015 11:05:51 streambase.py[line:714] DEBUG IN: '<iq type="result" id="634569" to="f@192.168.123.122/tunneler"><query xmlns="jabber:iq:roster"><item jid="e@192.168.123.122" name="e" subscription="both"><group>Friends</group></item></query></iq>'
+Fri, 26 Jun 2015 11:05:51 streamtls.py[line:185] DEBUG StreamTLSMixIn._read(), socket: <socket._socketobject object at 0x01ED3260>
+Fri, 26 Jun 2015 11:05:51 streambase.py[line:692] DEBUG StreamBase._read(), socket: <socket._socketobject object at 0x01ED3260>
+Fri, 26 Jun 2015 11:05:51 streambase.py[line:714] DEBUG IN: '<presence xmlns:default="http://pyxmpp.jajcus.net/xmlns/common" from="f@192.168.123.122/tunneler" to="f@192.168.123.122/tunneler"></presence><presence xmlns:default="http://pyxmpp.jajcus.net/xmlns/common" from="e@192.168.123.122/tunneler" to="f@192.168.123.122/tunneler"></presence>'
+Fri, 26 Jun 2015 11:05:51 stanzaprocessor.py[line:291] DEBUG Unhandled 'presence' stanza: '<default:presence xmlns:default="http://pyxmpp.jajcus.net/xmlns/common" xmlns="jabber:client" to="f@192.168.123.122/tunneler" from="f@192.168.123.122/tunneler"/>'
+Fri, 26 Jun 2015 11:05:51 stanzaprocessor.py[line:291] DEBUG Unhandled 'presence' stanza: '<default:presence xmlns:default="http://pyxmpp.jajcus.net/xmlns/common" xmlns="jabber:client" to="f@192.168.123.122/tunneler" from="e@192.168.123.122/tunneler"/>'
+Fri, 26 Jun 2015 11:05:53 resolver.py[line:144] WARNING Could not resolve '_xmpp-client._tcp.192.168.123.122': NXDOMAIN
+Fri, 26 Jun 2015 11:05:56 resolver.py[line:144] WARNING Could not resolve '_xmpp-client._tcp.192.168.123.122': NXDOMAIN
+Fri, 26 Jun 2015 11:05:59 resolver.py[line:144] WARNING Could not resolve '_xmpp-client._tcp.192.168.123.122': NXDOMAIN
+Fri, 26 Jun 2015 11:06:02 resolver.py[line:144] WARNING Could not resolve '_xmpp-client._tcp.192.168.123.122': NXDOMAIN
+Fri, 26 Jun 2015 11:06:03 resolver.py[line:144] WARNING Could not resolve '_xmpp-client._tcp.192.168.123.122': NXDOMAIN

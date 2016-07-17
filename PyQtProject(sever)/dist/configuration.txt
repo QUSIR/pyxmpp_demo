@@ -1,0 +1,4 @@
+forwardedpassword = '123456'
+configurationsever ='192.168.123.211'
+configurationtosever='f@192.168.123.211'
+configurationuser = 'e@192.168.123.211'

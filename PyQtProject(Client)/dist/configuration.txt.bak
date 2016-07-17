@@ -1,0 +1,4 @@
+configurationuser = 'f@192.168.123.122'
+configurationpassword = '123456'
+configurationsever='192.168.123.122'
+configurationtosever='e@192.168.123.122'
